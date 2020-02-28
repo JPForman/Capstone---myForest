@@ -42,7 +42,16 @@ module.exports = {
           ],
             plugins: [
               "react-hot-loader/babel"
-          ]
+          ],
+          test: /\.s[ac]ss$/i,
+use: [
+  // Creates `style` nodes from JS strings
+  'style-loader',
+  // Translates CSS into CommonJS
+  'css-loader',
+  // Compiles Sass to CSS
+  'sass-loader',
+],
         }
       }
     ]
@@ -53,7 +62,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'Social Media Clone',
+      title: 'myTree',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]

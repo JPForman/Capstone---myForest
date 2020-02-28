@@ -1,11 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Profile from './Profile'
-import Bio from './Bio'
+// import Profile from './Profile'
+// import Bio from './Bio'
 import FeedController from './FeedController'
-
+import FullCalendar from '@fullcalendar/react'
+import dayGridPlugin from '@fullcalendar/daygrid'
+import './main.scss'
 
 function App(){
+// tweeter content
   // let content = {
   //   width: '400px',
   //   float: 'left',
@@ -18,7 +21,7 @@ function App(){
   )
 
 
-
+// initial tweeter return
   // return (
   //   <div>
   //     <Navbar/>
