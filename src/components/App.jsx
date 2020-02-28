@@ -6,21 +6,29 @@ import FeedController from './FeedController'
 
 
 function App(){
-  let content = {
-    width: '400px',
-    float: 'left',
-  }
+  // let content = {
+  //   width: '400px',
+  //   float: 'left',
+  // }
 
   return (
     <div>
-      <Navbar/>
-      <div style={content}>
-        <Profile/>
-        <Bio/>
-      </div>
-      <FeedController/>
+      <p>hello world</p>
     </div>
   )
+
+
+
+  // return (
+  //   <div>
+  //     <Navbar/>
+  //     <div style={content}>
+  //       <Profile/>
+  //       <Bio/>
+  //     </div>
+  //     <FeedController/>
+  //   </div>
+  // )
 }
 
 export default App
